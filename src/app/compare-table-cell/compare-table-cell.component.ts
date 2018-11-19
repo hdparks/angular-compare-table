@@ -16,7 +16,7 @@ export class CompareTableCellComponent implements OnInit {
     @Input() row : string;
     @Input() col : string;
 
-    private cellType : number;
+    public cellType : number;
     private _window : Window;
 
     public filename : string;

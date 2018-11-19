@@ -8,7 +8,7 @@ import { RowsService } from '../rows.service';
 })
 export class RowCheckboxesComponent implements OnInit {
 
-    private rows;
+    public rows;
 
     constructor(public rowsService : RowsService) { }
 
