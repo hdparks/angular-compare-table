@@ -1,0 +1,6 @@
+<h2>Devices:</h2>
+<ul>
+    <li *ngFor="let c of cols">
+        <app-checkbox [name]="c" (checkbox_checked)="update_visibility(c,$event)"></app-checkbox>
+    </li>
+</ul>

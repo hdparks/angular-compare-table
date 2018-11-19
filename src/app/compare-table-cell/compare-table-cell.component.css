@@ -1,0 +1,30 @@
+
+img {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cell {
+    height: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.cell h2 {
+    display: block;
+    height: 100%;
+    margin:0;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    overflow: visible;
+}
+
+.cell:hover img {
+    border: 3pt solid white;
+    border-radius: 15pt;
+
+}

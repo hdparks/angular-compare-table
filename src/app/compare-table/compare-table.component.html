@@ -1,0 +1,13 @@
+<div class="table">
+
+    <div class="row header-row">
+        <app-compare-table-cell></app-compare-table-cell>
+        <app-compare-table-cell *ngFor="let c of cols" [col]='c'></app-compare-table-cell>
+    </div>
+
+
+    <div class="row" *ngFor="let r of rows; index as i">
+        <app-compare-table-cell [row]='getRowName(r)'></app-compare-table-cell>
+        <app-compare-table-cell *ngFor="let c of cols" [row]="r" [col]="c"></app-compare-table-cell>
+    </div>
+</div>

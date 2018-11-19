@@ -1,0 +1,28 @@
+.table {
+    margin-top: 50px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+app-compare-table-cell {
+    flex: 1 1 0;
+    position: relative;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 100px;
+    text-align: center;
+    margin:5px;
+}
+
+app-compare-table-cell:hover{
+    z-index: 100;
+}
