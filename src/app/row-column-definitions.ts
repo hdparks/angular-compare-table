@@ -3,7 +3,9 @@ export const ROWS: [string, string][] = [
     ['menu','Menu'],
     ['shows','Shows Page'],
     ['settings','Settings Page'],
-    ['livetv','LiveTV Page']
+    ['livetv','LiveTV Page'],
+    ['favorites','Favorites Page'],
+    ['search','Search Page'],
 ];
 
 export const COLS: string[] = [
