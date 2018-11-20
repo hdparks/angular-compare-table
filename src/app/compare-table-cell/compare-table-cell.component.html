@@ -1,6 +1,6 @@
 <div class="cell" [ngSwitch]='cellType'>
     <ng-container *ngSwitchCase='0'>
-        <img *ngIf='imageSrc' preload src={{imageSrc}} default='assets/default.jpg' alt={{altname}}>
+        <img *ngIf='imageSrc' preload src={{imageSrc}} default='assets/default.jpg' (click)='openModal();'alt={{altname}}>
     </ng-container>
     <h2 *ngSwitchCase='1'></h2>
     <h2 *ngSwitchCase='2'>{{row}}</h2>

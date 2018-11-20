@@ -12,6 +12,8 @@ import { RowCheckboxesComponent } from './row-checkboxes/row-checkboxes.componen
 import { ImagePreloaderDirective } from './image-preloader.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UploadModule } from './upload/upload.module';
+import { MatDialogModule } from '@angular/material';
+import { ImageModalComponent } from './image-modal/image-modal.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { UploadModule } from './upload/upload.module';
     ColCheckboxesComponent,
     RowCheckboxesComponent,
     ImagePreloaderDirective,
+    ImageModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,8 +32,10 @@ import { UploadModule } from './upload/upload.module';
     BrowserAnimationsModule,
     HttpClientModule,
     UploadModule,
+    MatDialogModule,
   ],
   providers: [],
+  entryComponents:[ImageModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

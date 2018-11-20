@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ImagePreloaderDirective } from '../image-preloader.directive';
 import { CellImageService } from '../cell-image.service';
 import { WindowService } from "../window.service";
+import { MatDialog } from "@angular/material";
+import { ImageModalComponent } from '../image-modal/image-modal.component';
 
 
 
@@ -23,7 +25,7 @@ export class CompareTableCellComponent implements OnInit {
     public altname : string;
     public imageSrc;
 
-    constructor(public cellImageService : CellImageService, public windowService : WindowService) {}
+    constructor(public cellImageService : CellImageService, public windowService : WindowService, public dialog: MatDialog) {}
 
     extractImgSrc(b:Blob){
         let reader = new FileReader();
@@ -64,6 +66,14 @@ export class CompareTableCellComponent implements OnInit {
                 },
             )
         }
+    }
+
+    openModal() {
+        console.log('Clicked on', this.filename)
+        let dialogRef = this.dialog.open(ImageModalComponent, {
+            data: { name:this.filename },
+            'height':'90%',
+        });
     }
 
 }
