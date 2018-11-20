@@ -72,7 +72,8 @@ export class CompareTableCellComponent implements OnInit {
         console.log('Clicked on', this.filename)
         let dialogRef = this.dialog.open(ImageModalComponent, {
             data: { name:this.filename },
-            'height':'90%',
+            maxHeight:'80vh',
+            maxWidth:'80vw',
         });
     }
 
