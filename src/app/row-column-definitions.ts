@@ -6,6 +6,7 @@ export const ROWS: [string, string][] = [
     ['livetv','LiveTV Page'],
     ['favorites','Favorites Page'],
     ['search','Search Page'],
+    ['login_prompt','Login Prompt']
 ];
 
 export const COLS: string[] = [
