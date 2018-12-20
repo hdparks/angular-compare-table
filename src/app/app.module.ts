@@ -11,7 +11,6 @@ import { ColCheckboxesComponent } from './col-checkboxes/col-checkboxes.componen
 import { RowCheckboxesComponent } from './row-checkboxes/row-checkboxes.component';
 import { ImagePreloaderDirective } from './image-preloader.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UploadModule } from './upload/upload.module';
 import { MatDialogModule } from '@angular/material';
 import { ImageModalComponent } from './image-modal/image-modal.component';
 
@@ -31,7 +30,6 @@ import { ImageModalComponent } from './image-modal/image-modal.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    UploadModule,
     MatDialogModule,
   ],
   providers: [],

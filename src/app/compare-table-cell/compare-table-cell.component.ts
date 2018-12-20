@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ImagePreloaderDirective } from '../image-preloader.directive';
-import { CellImageService } from '../cell-image.service';
 import { WindowService } from "../window.service";
 import { MatDialog } from "@angular/material";
 import { ImageModalComponent } from '../image-modal/image-modal.component';
@@ -25,15 +24,7 @@ export class CompareTableCellComponent implements OnInit {
     public altname : string;
     public imageSrc;
 
-    constructor(public cellImageService : CellImageService, public windowService : WindowService, public dialog: MatDialog) {}
-
-    extractImgSrc(b:Blob){
-        let reader = new FileReader();
-        reader.addEventListener('load', ()=>{
-            this.imageSrc = reader.result;
-        });
-        reader.readAsDataURL(b);
-    }
+    constructor(public windowService : WindowService, public dialog: MatDialog) {}
 
     ngOnInit() {
 
@@ -48,28 +39,14 @@ export class CompareTableCellComponent implements OnInit {
         } else if (!this.row && this.col){
             this.cellType = 3
         } else {
-            this.filename = `/${this.col.replace(" ",'-')}/${this.row}_thumbnail.jpg`;
             this.cellType = 0
+            this.filename = `/${this.col.replace(" ",'_')}/${this.row}_thumbnail.jpg`;
+            this.imageSrc = `assets/public${this.filename}`
         }
 
-        if (this.cellType == 0){
-            let imgblob;
-            this.cellImageService.getImage(this.filename).subscribe(
-                (blob) => {
-                    this.extractImgSrc(blob)
-                },
-                (err) => {
-                    this.cellImageService.getImage('/default.jpg').subscribe(def => {
-                        this.extractImgSrc(def)
-                    });
-                    console.log('Making call for default.jpg')
-                },
-            )
-        }
     }
 
     openModal() {
-        console.log('Clicked on', this.filename)
         let dialogRef = this.dialog.open(ImageModalComponent, {
             data: { name:this.filename },
             maxHeight:'80vh',
