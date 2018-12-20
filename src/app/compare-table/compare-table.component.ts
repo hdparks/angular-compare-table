@@ -25,7 +25,6 @@ export class CompareTableComponent implements OnInit {
 
     addRow(row){
         this.rows.push(row);
-        console.log(this.rows)
         //  Should I worry about duplicates? What happens?
     }
 

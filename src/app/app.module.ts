@@ -13,6 +13,8 @@ import { ImagePreloaderDirective } from './image-preloader.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material';
 import { ImageModalComponent } from './image-modal/image-modal.component';
+import { TableModalComponent } from './table-modal/table-modal.component';
+import { TableModalButtonComponent } from './table-modal-button/table-modal-button.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ImageModalComponent } from './image-modal/image-modal.component';
     RowCheckboxesComponent,
     ImagePreloaderDirective,
     ImageModalComponent,
+    TableModalComponent,
+    TableModalButtonComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,7 @@ import { ImageModalComponent } from './image-modal/image-modal.component';
     MatDialogModule,
   ],
   providers: [],
-  entryComponents:[ImageModalComponent],
+  entryComponents:[ImageModalComponent, TableModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -17,7 +17,7 @@ export class CompareTableCellComponent implements OnInit {
     @Input() row : string;
     @Input() col : string;
 
-    public cellType : number;
+    // Allows for modal creation on click
     private _window : Window;
 
     public filename : string;
@@ -32,21 +32,12 @@ export class CompareTableCellComponent implements OnInit {
 
         this.altname = `${this.col} ${this.row}`;
 
-        if (!this.row && !this.col){
-            this.cellType = 1
-        } else if (this.row && !this.col){
-            this.cellType = 2
-        } else if (!this.row && this.col){
-            this.cellType = 3
-        } else {
-            this.cellType = 0
-            this.filename = `/${this.col.replace(" ",'_')}/${this.row}_thumbnail.jpg`;
-            this.imageSrc = `assets/public${this.filename}`
-        }
+        this.filename = `/${this.col.replace(" ",'_')}/${this.row}_thumbnail.jpg`;
 
+        this.imageSrc = `assets/public${this.filename}`
     }
 
-    openModal() {
+    openImageModal() {
         let dialogRef = this.dialog.open(ImageModalComponent, {
             data: { name:this.filename },
             maxHeight:'80vh',

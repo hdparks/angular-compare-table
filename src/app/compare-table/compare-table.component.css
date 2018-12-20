@@ -8,10 +8,10 @@
 .row {
     display: flex;
     flex-direction: row;
-
 }
 
-app-compare-table-cell {
+
+.cell {
     flex: 1 1 0;
     position: relative;
     max-width: 300px;
