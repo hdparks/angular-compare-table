@@ -1,0 +1,25 @@
+.modal {
+    display: block;
+    margin: auto;
+}
+
+.flex {
+    flex: auto;
+    margin: auto;
+    text-align: center;
+    min-width: 75px;
+    max-width: 100px;
+}
+
+.feature {
+    flex: 1 1 auto;
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+.green {
+    color: green;
+}

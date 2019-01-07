@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { WindowService } from "../window.service";
 import { MatDialog } from "@angular/material";
 import { TableModalComponent } from '../table-modal/table-modal.component'
@@ -10,15 +10,19 @@ import { TableModalComponent } from '../table-modal/table-modal.component'
 })
 export class TableModalButtonComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) {}
+    @Input('viewname') viewname : string;
 
-  ngOnInit() {
-  }
+    constructor(public dialog: MatDialog) {}
 
-  openTableModal() {
-      let dialogRef = this.dialog.open(TableModalComponent, {
-          data: {}
-      })
-  }
+    ngOnInit() {
+    }
+
+    openTableModal() {
+        let dialogRef = this.dialog.open(TableModalComponent, {
+            data: { viewname : this.viewname},
+            maxHeight:'80vh',
+            maxWidth:'900px',
+        });
+    }
 
 }

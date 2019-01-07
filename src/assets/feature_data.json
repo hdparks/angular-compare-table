@@ -1,11 +1,12 @@
-[
+{
+"devices" : ["Web","Roku","AppleTV","FireTV","Mobile Web","iOS","Android"],
+"homepage" : [
     {
-        "name":"first",
-        "1":"one",
-        "2":"two",
-        "3":"three"
+        "description" : "Example 1, but this one is super long.",
+        "included" : [true, true, false, false, true, "n/a", "n/a"]
     },
     {
-        "name":"second"
-    }
-]
+        "description" : "Example 2",
+        "included" : [true, true, false, false, true, "n/a", "n/a"]
+    }]
+}

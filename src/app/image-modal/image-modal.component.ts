@@ -10,10 +10,10 @@ export class ImageModalComponent implements OnInit {
 
     public imageSrc;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
+    constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
 
-  ngOnInit() {
+    ngOnInit() {
       this.imageSrc = `assets/public${this.data.name}`.replace('_thumbnail.jpg','.jpg')
-  }
+    }
 
 }

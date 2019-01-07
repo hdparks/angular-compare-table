@@ -1,3 +1,19 @@
-<div class="container">
-    <p *ngFor="let feature of jsonData">name = {{feature.name}}</p>
+<div class="modal">
+    <div class="flex-container">
+        <div class="flex feature"></div>
+        <div class="flex" *ngFor="let device of jsonData.devices">
+            <p>{{device}}</p>
+        </div>
+    </div>
+
+    <div class="flex-container" *ngFor="let feature of features">
+        <div class="flex feature">
+            {{feature.description}}
+        </div>
+
+        <div class="flex green" *ngFor="let included of feature.included">
+            {{included ? "&#10004;" : ""}}
+        </div>
+    </div>
+
 </div>
