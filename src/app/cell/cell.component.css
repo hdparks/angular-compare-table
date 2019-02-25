@@ -1,0 +1,14 @@
+img {
+    min-width:100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+div{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}

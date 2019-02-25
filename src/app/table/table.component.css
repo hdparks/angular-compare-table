@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    height: 300px;
+}
+
+* {
+    border: 1pt solid black;
+}
+.cell{
+    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    flex-basis: 0;
+    flex-grow:1;
+}
+.header>h2{
+    text-align: center;
+}
+
+app-cell {
+    border:none;
+}

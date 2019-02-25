@@ -1,0 +1,5 @@
+<h2>Devices:</h2>
+<div *ngFor="let d of devices">
+    <input type="checkbox" (change)="boxChange(d,$event)">
+    {{d.name}}
+</div>
