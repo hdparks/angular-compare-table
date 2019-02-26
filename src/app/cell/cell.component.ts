@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Device } from '../device';
 import { View } from '../view';
+import { ImageScaleDirective } from '../image-scale.directive';
 
 @Component({
   selector: 'app-cell',
@@ -15,11 +16,16 @@ export class CellComponent implements OnInit {
     src:string;
     alt:string;
 
-    constructor() { }
+    constructor() {
+
+    }
 
     ngOnInit() {
         this.src = "../../../assets/public/"+this.device.assetPath+"/"+this.view.assetPath+".jpg";
         this.alt = this.device.name + " " + this.view.name;
     }
+
+
+
 
 }

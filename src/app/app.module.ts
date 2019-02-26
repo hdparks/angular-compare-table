@@ -7,6 +7,7 @@ import { TableComponent } from './table/table.component';
 import { DeviceListComponent } from './device-list/device-list.component';
 import { ViewListComponent } from './view-list/view-list.component';
 import { CellComponent } from './cell/cell.component';
+import { ImageScaleDirective } from './image-scale.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CellComponent } from './cell/cell.component';
     TableComponent,
     DeviceListComponent,
     ViewListComponent,
-    CellComponent
+    CellComponent,
+    ImageScaleDirective
   ],
   imports: [
     BrowserModule,
