@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Device } from '../device';
+import { View } from '../view';
 
 @Component({
   selector: 'app-cell',
