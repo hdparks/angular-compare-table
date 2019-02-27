@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    padding: 5px;
+    margin: 0;
+}
+
+.view {
+    padding: 10px;
+    white-space: nowrap;
+}

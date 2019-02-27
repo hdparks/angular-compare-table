@@ -1,5 +1,5 @@
 <h2>Views:</h2>
-<div *ngFor="let v of views">
+<div class="view" *ngFor="let v of views">
     <input type="checkbox" (change)="boxChange(v,$event)">
     {{v.name}}
 </div>

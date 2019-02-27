@@ -1,3 +1,3 @@
-<div class="">
-    <img #image appImageScale src="{{src}}" onError="this.src='../../../assets/default.jpg'"  alt={{alt}}>
+<div [@bloom]="{value: currentState, params: {imgHeight: imgHeight + 10, imgWidth:imgWidth + 10}}" (mouseenter)="bloom()" (mouseleave)="relax()">
+    <img #image appImageScale (load)="storeDimensions($event.target)" src="{{src}}" onError="this.src='../../../assets/default.jpg'"  alt={{alt}}>
 </div>
