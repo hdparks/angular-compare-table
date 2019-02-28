@@ -1,11 +1,14 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog'
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { Device } from '../device';
 import { View } from '../view';
+import { ImageDialogComponent } from '../image-dialog/image-dialog.component';
 import { ImageScaleDirective } from '../image-scale.directive';
 
 @Component({
   selector: 'app-cell',
+
   animations: [
     trigger('bloom', [
         state('bloom', style({
@@ -23,7 +26,9 @@ import { ImageScaleDirective } from '../image-scale.directive';
         transition('bloom=>normal', animate('150ms'))
     ])
   ],
+
   templateUrl: './cell.component.html',
+
   styleUrls: ['./cell.component.css']
 })
 export class CellComponent implements OnInit {
@@ -38,9 +43,9 @@ export class CellComponent implements OnInit {
     alt:string;
 
     imgHeight:string = '110%';
-    imgWidth:string = "110%";
+    imgWidth:string = '110%';
 
-    constructor() {
+    constructor(public dialog: MatDialog) {
 
     }
 
@@ -58,9 +63,18 @@ export class CellComponent implements OnInit {
     }
 
     storeDimensions(el:any){
-        console.log("Storing dimensions", el.offsetWidth)
         this.imgHeight = el.offsetHeight;
         this.imgWidth = el.offsetWidth;
+    }
+
+    openDialog(){
+        let dialogRef = this.dialog.open(ImageDialogComponent, {
+            data: { src: this.src}
+        });
+
+        dialogRef.afterClosed().subscribe(result=>{
+            console.log("dialog result: ${result}");
+        })
     }
 
 

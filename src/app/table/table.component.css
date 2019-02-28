@@ -11,9 +11,19 @@
     flex-grow:1;
     border: 5pt solid white;
 }
-.header>h2{
+.centered{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+}
+
+app-view-data-button {
+    position: relative;
+    display: block;
+    margin:auto;
+}
+
+.header-row {
+    max-height:  150px;
 }
