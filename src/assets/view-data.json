@@ -1,3 +1,20 @@
 {
-    "name":"Hello, World!"
+    "name":"Hello, World!",
+    "Homepage": [{
+        "name":"Property 1",
+        "Web":true,
+        "Roku":true,
+        "AppleTV":false,
+        "FireTV":false,
+        "Mobile Web":true,
+        "Android":true
+        },{
+            "name":"Property 2",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":true,
+            "Android":true
+        }]
 }

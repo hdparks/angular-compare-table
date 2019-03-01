@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,9 +34,11 @@ import { ViewDataModalComponent } from './view-data-modal/view-data-modal.compon
     AppRoutingModule,
     MatDialogModule,
     MatButtonModule,
+    HttpClientModule,
   ],
   entryComponents: [
-     ImageDialogComponent
+     ImageDialogComponent,
+     ViewDataModalComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

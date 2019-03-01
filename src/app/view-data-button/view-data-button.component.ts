@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { ViewDataModalComponent } from '../view-data-modal/view-data-modal.component'
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-view-data-button',
@@ -7,12 +9,14 @@ import { Component, Input } from '@angular/core';
 })
 export class ViewDataButtonComponent {
 
-    @Input() view:string;
+    @Input() viewName:string;
 
-    constructor() { }
+    constructor(public dialog: MatDialog) { }
 
     openModal(){
-        console.log("Clicked!")
+        let modalRef = this.dialog.open(ViewDataModalComponent, {
+            data: { viewName: this.viewName }
+        });
     }
 
 }

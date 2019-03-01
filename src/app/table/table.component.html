@@ -10,7 +10,7 @@
     <div class="header cell">
         <div class="centered">
             <h2>{{view.name}}</h2>
-            <app-view-data-button view="view"></app-view-data-button>
+            <app-view-data-button viewName={{view.name}}></app-view-data-button>
         </div>
     </div>
     <div class="cell" *ngFor="let device of devices">

@@ -1,3 +1,4 @@
-<p>
-  view-data-modal works!
-</p>
+
+<div *ngFor="let property of propertiesList | async">
+    {{property.name}}
+</div>
