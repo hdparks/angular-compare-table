@@ -1,20 +1,76 @@
 {
     "name":"Hello, World!",
     "Homepage": [{
-        "name":"Property 1",
-        "Web":true,
-        "Roku":true,
-        "AppleTV":false,
-        "FireTV":false,
-        "Mobile Web":true,
-        "Android":true
-        },{
-            "name":"Property 2",
+            "name":"Featured Episodes List",
             "Web":true,
             "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Upcoming Games",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Top Shows List",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Upcoming Games",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Events banner",
+            "Web":true,
+            "Roku":false,
             "AppleTV":false,
             "FireTV":false,
             "Mobile Web":true,
+            "iOS":true,
             "Android":true
+        },{
+            "name":"Blog",
+            "Web":true,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Social Media",
+            "Web":true,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Footer Links (Feedback, Terms of Use)",
+            "Web":true,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":true,
+            "iOS":false,
+            "Android":false
         }]
 }

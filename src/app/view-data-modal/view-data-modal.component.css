@@ -1,10 +1,17 @@
+.modal-content {
+    padding: 10pt;
+}
+
 .property {
     display: flex;
+    align-items: center;
 }
 
 .property-name {
     flex-basis: 2;
-    min-width: 100px;
+    min-width: 110px;
+    max-width: 110px;
+    text-align: right;
 }
 
 .property-value {
@@ -16,4 +23,5 @@
 
 .green{
     color: green;
+    font-weight: bold;
 }

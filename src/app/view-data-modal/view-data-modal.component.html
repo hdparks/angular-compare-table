@@ -1,18 +1,21 @@
+<div class="modal-content">
 
-<div class="property headers">
-    <h4 class="property-name"></h4>
-    <h4 class="property-value" *ngFor="let device of devices">
-        {{device.name}}
-    </h4>
-</div>
+    <div class="property headers">
+        <h4 class="property-name"></h4>
+        <h4 class="property-value" *ngFor="let device of devices">
+            {{device.name}}
+        </h4>
+    </div>
 
-<div class="property" *ngFor="let property of propertiesList | async">
-    <h4 class="property-name">
-        {{property.name}}
-    </h4>
+    <div class="property" *ngFor="let property of propertiesList | async">
+        <p class="property-name">
+            {{property.name}}
+        </p>
 
-    <p class="property-value green" *ngFor="let device of devices">
-        {{property[device.name] ? 	"&#x2714;" : ""}}
-    </p>
+        <p class="property-value green" *ngFor="let device of devices">
+            {{property[device.name] ? 	"&#x2714;" : ""}}
+        </p>
+
+    </div>
 
 </div>
