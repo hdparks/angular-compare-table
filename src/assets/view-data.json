@@ -72,5 +72,419 @@
             "Mobile Web":true,
             "iOS":false,
             "Android":false
-        }]
+        }
+    ],
+    "Menu":[{
+            "name":"Home link",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Shows link",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"LiveTV link",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Favorites link",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Settings Link",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Social link",
+            "Web":true,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Search link",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        }
+    ],
+
+
+
+    "LiveTV Page":[
+        {
+            "name":"Link to Sign In if not signed in",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Link to Create Account if not signed in",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Signing in returns user to LiveTV page",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Now Next Later list",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Link to view schedule",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        }
+    ],
+
+
+
+    "Favorites Page":[
+        {
+            "name":"Play History",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Watch List",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Favorite Shows List",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Remove All Button for each category",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"View All Button for each category",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Ability to Delete Single Element",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Link to Sign In if not signed in",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Link to Create Account if not signed in",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Signing In returns user to Favorites Page",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        }
+    ],
+
+
+
+    "Social Page": [
+        {
+            "name":"Links to BYUtv Social Media accounts",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Featured Episodes List",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        }
+    ],
+
+
+
+    "Settings Page": [
+        {
+            "name":"Sign In if not signed in",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Account Creation if not signed in",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Password Reset if not signed in",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Update Account Information (name, password)",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Update Account Email",
+            "Web":true,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":false,
+            "iOS":false,
+            "Android":false
+        },{
+            "name":"Delete Account Link",
+            "Web":true,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":false,
+            "iOS":false,
+            "Android":false
+        },{
+            "name":"Sign Out Link",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Clear Play History (Favorites)",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Clear Watch List (Favorites)",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Clear Favorite Episodes List (Favorites)",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        }
+
+    ],
+
+
+    "Shows Page": [
+        {
+            "name":"Show Lists",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"View All Link per Show List",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        }
+    ],
+
+    "Search Page": [
+
+        {
+            "name":"Returns Suggestions as you type",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Results include Shows, Episodes",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Results include Blog Posts, Cast Members",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        }
+
+    ],
+
+
+    "Login Prompt": [
+        {
+            "name":"Sign In Link",
+            "Web":true,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":true,
+            "Mobile Web":true,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"Create Account Link",
+            "Web":false,
+            "Roku":true,
+            "AppleTV":true,
+            "FireTV":false,
+            "Mobile Web":false,
+            "iOS":true,
+            "Android":true
+        },{
+            "name":"List of Benefits of Signing In",
+            "Web":false,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":false,
+            "iOS":true,
+            "Android":true
+        }
+
+    ]
 }
