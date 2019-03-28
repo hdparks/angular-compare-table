@@ -1,16 +1,16 @@
 {
     "name":"Hello, World!",
     "Homepage": [{
-            "name":"Featured Episodes List",
+            "name":"Events banner",
             "Web":true,
-            "Roku":true,
-            "AppleTV":true,
-            "FireTV":true,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
             "Mobile Web":true,
             "iOS":true,
             "Android":true
         },{
-            "name":"Upcoming Games",
+            "name":"Featured Episodes List",
             "Web":true,
             "Roku":true,
             "AppleTV":true,
@@ -33,15 +33,6 @@
             "Roku":true,
             "AppleTV":true,
             "FireTV":true,
-            "Mobile Web":true,
-            "iOS":true,
-            "Android":true
-        },{
-            "name":"Events banner",
-            "Web":true,
-            "Roku":false,
-            "AppleTV":false,
-            "FireTV":false,
             "Mobile Web":true,
             "iOS":true,
             "Android":true
@@ -135,7 +126,7 @@
             "AppleTV":true,
             "FireTV":true,
             "Mobile Web":true,
-            "iOS":true,
+            "iOS":false,
             "Android":true
         }
     ],
@@ -144,7 +135,7 @@
 
     "LiveTV Page":[
         {
-            "name":"Link to Sign In if not signed in",
+            "name":"Link to Sign In",
             "Web":true,
             "Roku":true,
             "AppleTV":true,
@@ -153,8 +144,8 @@
             "iOS":true,
             "Android":true
         },{
-            "name":"Link to Create Account if not signed in",
-            "Web":true,
+            "name":"Link to Create Account",
+            "Web":false,
             "Roku":true,
             "AppleTV":true,
             "FireTV":true,
@@ -180,7 +171,7 @@
             "iOS":true,
             "Android":true
         },{
-            "name":"Link to view schedule",
+            "name":"Link to Schedule",
             "Web":true,
             "Roku":true,
             "AppleTV":true,
@@ -259,7 +250,7 @@
             "Android":true
         },{
             "name":"Link to Create Account if not signed in",
-            "Web":true,
+            "Web":false,
             "Roku":true,
             "AppleTV":true,
             "FireTV":true,
@@ -306,7 +297,7 @@
 
     "Settings Page": [
         {
-            "name":"Sign In if not signed in",
+            "name":"Sign In",
             "Web":true,
             "Roku":true,
             "AppleTV":true,
@@ -315,7 +306,7 @@
             "iOS":true,
             "Android":true
         },{
-            "name":"Account Creation if not signed in",
+            "name":"Create Account",
             "Web":true,
             "Roku":true,
             "AppleTV":true,
@@ -324,7 +315,16 @@
             "iOS":true,
             "Android":true
         },{
-            "name":"Password Reset if not signed in",
+            "name":"Password Reset",
+            "Web":true,
+            "Roku":false,
+            "AppleTV":false,
+            "FireTV":false,
+            "Mobile Web":true,
+            "iOS":false,
+            "Android":false
+        },{
+            "name":"Update Name & Password",
             "Web":true,
             "Roku":true,
             "AppleTV":true,
@@ -333,16 +333,7 @@
             "iOS":true,
             "Android":true
         },{
-            "name":"Update Account Information (name, password)",
-            "Web":true,
-            "Roku":true,
-            "AppleTV":true,
-            "FireTV":true,
-            "Mobile Web":true,
-            "iOS":true,
-            "Android":true
-        },{
-            "name":"Update Account Email",
+            "name":"Update Email",
             "Web":true,
             "Roku":false,
             "AppleTV":false,
@@ -351,7 +342,7 @@
             "iOS":false,
             "Android":false
         },{
-            "name":"Delete Account Link",
+            "name":"Delete Account",
             "Web":true,
             "Roku":false,
             "AppleTV":false,
@@ -360,7 +351,7 @@
             "iOS":false,
             "Android":false
         },{
-            "name":"Sign Out Link",
+            "name":"Sign Out",
             "Web":true,
             "Roku":true,
             "AppleTV":true,
@@ -370,16 +361,16 @@
             "Android":true
         },{
             "name":"Clear Play History (Favorites)",
-            "Web":true,
+            "Web":false,
             "Roku":true,
             "AppleTV":true,
             "FireTV":true,
-            "Mobile Web":true,
-            "iOS":true,
-            "Android":true
+            "Mobile Web":false,
+            "iOS":false,
+            "Android":false
         },{
             "name":"Clear Watch List (Favorites)",
-            "Web":true,
+            "Web":false,
             "Roku":true,
             "AppleTV":true,
             "FireTV":true,
@@ -388,7 +379,7 @@
             "Android":true
         },{
             "name":"Clear Favorite Episodes List (Favorites)",
-            "Web":true,
+            "Web":false,
             "Roku":true,
             "AppleTV":true,
             "FireTV":true,
