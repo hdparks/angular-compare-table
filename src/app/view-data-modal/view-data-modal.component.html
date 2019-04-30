@@ -1,5 +1,11 @@
 <div class="modal-content">
 
+    <button mat-button mat-dialog-close type="button" name="close" >
+        <span>&times;</span>
+    </button>
+
+    <h1>{{viewData.viewName}}</h1>
+
     <div class="property headers">
         <h4 class="property-name"></h4>
         <h4 class="property-value" *ngFor="let device of devices">

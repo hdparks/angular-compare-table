@@ -1,4 +1,5 @@
 .modal-content {
+    position: relative;
     padding: 10pt;
 }
 
@@ -24,4 +25,15 @@
 .green{
     color: green;
     font-weight: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 20pt;
 }
