@@ -10,7 +10,7 @@ export class ReadJsonService {
   constructor(private http: HttpClient) { }
 
   public getJSON(): Observable<any> {
-      return this.http.get("../../assets/view-data.json");
+      return this.http.get("./assets/view-data.json");
   }
 
 }
